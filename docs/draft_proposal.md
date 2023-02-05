@@ -6,6 +6,8 @@ Image caption generator bears applications in assistive technology and can help 
 It can also be extended to uses such as map descriptions for users/self-driven cars. 
 The primary goal of the project will be to learn Deep learning and NLP tools to build a model that can analyse the images and comprehend the meaning from given captions.
 
+![Image Captioning](Sravya_Data606/docs/draftproposalimage.jpg)
+
 ### Dataset:
 
 The dataset that will be used for this is the Flickr8k which can be found here:
