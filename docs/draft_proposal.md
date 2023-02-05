@@ -6,7 +6,7 @@ Image caption generator bears applications in assistive technology and can help 
 It can also be extended to uses such as map descriptions for users/self-driven cars. 
 The primary goal of the project will be to learn Deep learning and NLP tools to build a model that can analyse the images and comprehend the meaning from given captions.
 
-<img src="draftproposalimage.jpg" width="500"/>
+<img src="draftproposalimage.jpg" width="1000"/>
 
 ### Dataset:
 
