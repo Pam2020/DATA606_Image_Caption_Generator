@@ -8,6 +8,7 @@ The primary goal of the project will be to learn Deep learning and NLP tools to 
 
 The dataset that will be used for this is the Flickr8k which can be found here:
 https://www.kaggle.com/datasets/e1cd22253a9b23b073794872bf565648ddbe4f17e7fa9e74766ad3707141adeb
+This dataset consists of about 8000 image files and captions for the same. 
 
 References that will be used are:
 1. https://arxiv.org/pdf/1502.03044.pdf
