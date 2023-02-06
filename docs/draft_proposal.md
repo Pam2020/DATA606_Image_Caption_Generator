@@ -37,7 +37,7 @@ Through this project we will build an image caption generator that will generate
 
 As our dataset consists of just images (.jpg files)and captions (a text file), we do not have any EDA to perform. The next step would be to start building the decoder. Before this we will be brushing up PyTorch basics and figure out how we should input our data into the decoder (CNN) model.
 
-Work distribution: Hema will figure out how we need to input our data into the model, and the hyperparameters needed for training the model (hyperparameters of the model as well as the optimizing process). I will build the decoder model using pretrained CNN models in PyTorch. 
+Work distribution: Hema will figure out how we need to input our data into the model, and the hyperparameters needed for training the model (hyperparameters of the model as well as the optimizing process). Sravya will build the decoder model using pretrained CNN models in PyTorch. 
 
 
 
