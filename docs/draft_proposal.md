@@ -18,6 +18,13 @@ References that will be used are:
 1. https://arxiv.org/pdf/1502.03044.pdf
 2. https://github.com/Siddharth1698/Image-Captioning-with-Inception-LSTM
 
+### Methods:
+
+The model will be in the form of an decoder-encoder. The decoder will be a Convolutional neural network. This part will be used to understand the images and detect the core information in them. Pretrained CNN models such as VGG, AlexNet or LeeNet will be used to learn the information from the images. The output of the CNN will be input to the encoder. The encoder will be a series of LSTM's (Long short term memory - a recurrent neiral network - https://en.wikipedia.org/wiki/Long_short-term_memory), which will generate the caption based on the output information from the decoder. We will be using PyTorch to implement these models. 
+
+We will be training our model using mini-batch gradient descent. We will be training our model in epochs. The optimizer will train the model by reducing the loss function which is calculated using the generated words and the words in the exisitng captions (while training). These are aspects of the project that we will figure out as we go along working on the project.
+
+
 ### Deployment:
 
 A simple web application will be built using streamlit that will ask the user for an image and generate a caption for the given image. 
@@ -25,6 +32,14 @@ A simple web application will be built using streamlit that will ask the user fo
 ### Outcome:
 
 Through this project we will build an image caption generator that will generate captions for a user given image. 
+
+### Next steps and work distribution:
+
+As our dataset consists of just images (.jpg files)and captions (a text file), we do not have any EDA to perform. The next step would be to start building the decoder. Before this we will be brushing up PyTorch basics and figure out how we should input our data into the decoder (CNN) model.
+
+Work distribution: Hema will figure out how we need to input our data into the model, and the hyperparameters needed for training the model (hyperparameters of the model as well as the optimizing process). I will build the decoder model using pretrained CNN models in PyTorch. 
+
+
 
 
 
