@@ -1,5 +1,7 @@
 ## Image Caption Generator
 
+### Team: Sravya Pamula and Hema Kavuri
+
 An image caption generator basically generates decsriptions of what is going on in a given image. This is a natural human ability to look at an image and pay attention to the curcial information in the image and describe it in just a few words. Can a machine do this? Using tools such as natural language processing and object detection (computer vision), it is possible to train a model to do this task. This will be explored in this project. 
 
 Image caption generator bears applications in assistive technology and can help visually imapired to infer their surroundings. 
@@ -37,7 +39,7 @@ Through this project we will build an image caption generator that will generate
 
 As our dataset consists of just images (.jpg files)and captions (a text file), we do not have any EDA to perform. The next step would be to start building the decoder. Before this we will be brushing up PyTorch basics and figure out how we should input our data into the decoder (CNN) model.
 
-Work distribution: Hema will figure out how we need to input our data into the model, and the hyperparameters needed for training the model (hyperparameters of the model as well as the optimizing process). I will build the decoder model using pretrained CNN models in PyTorch. 
+Work distribution: Hema will figure out how we need to input our data into the model, and the hyperparameters needed for training the model (hyperparameters of the model as well as the optimizing process). Sravya will build the decoder model using pretrained CNN models in PyTorch. 
 
 
 
