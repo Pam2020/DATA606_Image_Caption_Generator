@@ -1,5 +1,7 @@
 ## Image Caption Generator
 
+Team: Sravya Pamula and Hema Kavuri
+
 An image caption generator basically generates decsriptions of what is going on in a given image. This is a natural human ability to look at an image and pay attention to the curcial information in the image and describe it in just a few words. Can a machine do this? Using tools such as natural language processing and object detection (computer vision), it is possible to train a model to do this task. This will be explored in this project. 
 
 Image caption generator bears applications in assistive technology and can help visually imapired to infer their surroundings. 
