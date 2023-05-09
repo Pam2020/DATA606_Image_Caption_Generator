@@ -17,27 +17,34 @@ Apart from these we also have a test examplex dataset with 8 images for which ca
 ### Pre-processing:
 
 - Vocabulary Class: 
+
 Tokens are created for words that occur more than a chosen threshold frequency. String to index (stoi) and Index to string (itos) dictionaries are created to switch from string to index for these tokens. This is needed as the machine inputs numbers and hence we need to convert the words to indices. Pad token, start of sentence, end of sentence and unknown are defined to help the model make decisions about start, end and padding in captions. 
 
 - FlickrDataset Class: 
+
 In this class we define dataset attributes such as root directory, captions file, etc. This class will be used later on to get the data ready and load the data using getloader class. This class retrieves the image and caption from the dataset and numericalizes it. It returns a PyTorch Tensor that can be used for pytorch modeling. 
 
 - MyCollate Class: 
+
 Converts all the images into the same dimensions for modeling. Pads the target captions to the same length for modeling.
 
 - GetLoader Class: 
+
 This class defines a FlickrDataset class object and uses the inbuilt PyTorch DataLoader to get the data ready for modeling in PyTorch.
 
 ### Modeling:
 
 The model will be in the form of an encoder-decoder. 
 - Encoder CNN:  
+
 The encoder will be a Convolutional neural network. This part will be used to understand the images and detect the core information in them by encoding them. Pretrained CNN model inception v3 model is used to learn the information from the images. Last Fully Connected (Linear) layer of the pretrained model is modified to return a tensor of the size that goes into the RNN (LSTM).
 
 - Decoder RNN: 
+
 The output of the CNN will be input to the decoder RNN. The decoder will be a series of LSTM's (Long short term memory - a recurrent neiral network - https://en.wikipedia.org/wiki/Long_short-term_memory), which will generate the caption based on the output information from the encoder. LSTM is the most used RNN for natural language processing as it retains context/information in long-term memory along with the short-term memory from the previous time step. LSTM takes in output from the encoder CNN and uses it along with Vocabulary to generate captions based on context. We will be using PyTorch to implement these models.
 
 - CNNtoRNN: 
+
 Combines both the EncoderCNN and DecoderRNN models. Words of the caption are generated one by one. The initial input is the output of the EncoderCNN which is used to generate the first word of the caption. This word is sent to the DecoderRNN again and is used to generate the next words. 
 
 We will be training our model using mini-batch gradient descent. We will be training our model in epochs. The optimizer will train the model by reducing the loss function which is calculated using the generated words and the words in the exisitng captions (while training).
