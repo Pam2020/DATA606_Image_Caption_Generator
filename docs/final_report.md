@@ -56,10 +56,25 @@ We train our model for 1, 10 and 30 epochs. The observations we made based on th
 4. When the number of epochs are increased from 1 to 10 and 30, we see imrpovement. The model generates unique captions for each of the test images and does a good job of identifying some core elements of the image. 
 <img src="images/epoch1_report.PNG" width="300"/>
 <img src="images/epoch10_report.PNG" width="280"/>
-<img src="images/epoch30_report.PNG" width="250"/>
+<img src="images/epoch30_report.PNG" width="270"/>
 
 ### Deployment:
 A simple web application is built using streamlit that will ask the user for an image and generate a caption for the given image.
+
+<img src="images/streamlitproduct.jpeg" width="270"/>
+
+### Future Work:
+
+- To improve its accuracy, we can try by increasing number of epochs to 50, 100 with help of more powerful computational resources.
+- We can try using different CNN models like AlexNet and LeNet inplace of InceptionV3 to encode the image.
+- Tweaking the hyper-parameters can give better performance of the model.
+- Using a different/more diversified dataset can help the model learn better.
+
+### Challenges overcome:
+
+- The biggest challenge we faced is runtime as it takes more than 4 hours to run 1 epoch using CPU.
+- To overcome this, we used GPU to train the model, runtime reduced to 10-15 mins to run 1 epoch, limited GPU. 
+- Got exposed to fundamentals of Deep learning, NLP and PyTorch library.
 
 ### References:
 
