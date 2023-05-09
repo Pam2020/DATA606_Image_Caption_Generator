@@ -51,8 +51,12 @@ We train our model for 1, 10 and 30 epochs. The observations we made based on th
 3. When trained for only one epoch, the model learns only a few words and generates the same caption for different images although not for all of them. 
 4. When the number of epochs are increased from 1 to 10 and 30, we see imrpovement. The model generates unique captions for each of the test images and does a good job of identifying some core elements of the image. 
 
-<img src="images/" width="800"/>
+<img src="images/epoch1_unique.PNG" width="800"/>
+<img src="images/epoch10_unique.PNG" width="800"/>
 
+<img src="images/epoch1_report.PNG" width="800"/>
+<img src="images/epoch10_report.PNG" width="800"/>
+<img src="images/epoch30_report.PNG" width="800"/>
 
 ### Deployment:
 A simple web application is built using streamlit that will ask the user for an image and generate a caption for the given image.
