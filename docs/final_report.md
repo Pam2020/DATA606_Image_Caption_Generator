@@ -70,7 +70,7 @@ A simple web application is built using streamlit that will ask the user for an 
 - Tweaking the hyper-parameters can give better performance of the model.
 - Using a different/more diversified dataset can help the model learn better.
 
-### Challenges overcome:
+### Challenges overcome/Lessons learned:
 
 - The biggest challenge we faced is runtime as it takes more than 4 hours to run 1 epoch using CPU.
 - To overcome this, we used GPU to train the model, runtime reduced to 10-15 mins to run 1 epoch, limited GPU. 
