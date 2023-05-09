@@ -7,7 +7,7 @@ An image caption generator basically generates decsriptions of what is going on 
 
 Image caption generator bears applications in assistive technology and can help visually imapired to infer their surroundings. It can also be extended to uses such as map descriptions for users/self-driven cars. The primary goal of the project will be to learn Deep learning and NLP tools to build a model that can analyse the images and comprehend the meaning from given captions.
 
-<img src="draftproposalimage.jpg" width="800"/>
+<img src="images/draftproposalimage.jpg" width="800"/>
 
 ### Dataset:
 
@@ -49,11 +49,13 @@ We train our model for 1, 10 and 30 epochs. The observations we made based on th
 1. As our dataset consists of images with people, the model tends to recognise people easily and also brings up people in images where there are no people. 
 2. For the same reason as above, our model easily identifies people, balls, grass. 
 3. When trained for only one epoch, the model learns only a few words and generates the same caption for different images although not for all of them. 
-4. When the number of epochs are increased from 1 to 10 and 30, we see imrpovement. The model generates unique captions for each of the test images and does a good job of identifying some core elements of the image.  
+4. When the number of epochs are increased from 1 to 10 and 30, we see imrpovement. The model generates unique captions for each of the test images and does a good job of identifying some core elements of the image. 
+
+<img src="images/" width="800"/>
 
 
 ### Deployment:
-A simple web application will be built using streamlit that will ask the user for an image and generate a caption for the given image.
+A simple web application is built using streamlit that will ask the user for an image and generate a caption for the given image.
 
 ### References:
 
