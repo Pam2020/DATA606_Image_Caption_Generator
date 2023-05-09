@@ -78,5 +78,9 @@ A simple web application is built using streamlit that will ask the user for an 
 
 ### References:
 
-https://arxiv.org/pdf/1502.03044.pdf
-https://github.com/Siddharth1698/Image-Captioning-with-Inception-LSTM
+- https://arxiv.org/pdf/1502.03044.pdf
+- https://github.com/Siddharth1698/Image-Captioning-with-Inception-LSTM
+- https://www.youtube.com/watch?v=y2BaTt1fxJU&ab_channel=AladdinPersson
+
+
+
