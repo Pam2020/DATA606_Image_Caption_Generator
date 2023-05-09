@@ -7,12 +7,14 @@ An image caption generator basically generates decsriptions of what is going on 
 
 Image caption generator bears applications in assistive technology and can help visually imapired to infer their surroundings. It can also be extended to uses such as map descriptions for users/self-driven cars. The primary goal of the project will be to learn Deep learning and NLP tools to build a model that can analyse the images and comprehend the meaning from given captions.
 
-#### Dataset:
+<img src="draftproposalimage.jpg" width="800"/>
+
+### Dataset:
 
 The dataset that will be used for this is the Flickr8k which can be found here: https://www.kaggle.com/datasets/e1cd22253a9b23b073794872bf565648ddbe4f17e7fa9e74766ad3707141adeb. This dataset consists of about 8000 image files and captions for the same. The captions are in a csv file which has around 40,000 records implying that the each image has more than one caption. 
 Apart from these we also have a test examplex dataset with 8 images for which captions need to be generated.
 
-#### Pre-processing:
+### Pre-processing:
 
 - Vocabulary Class: Tokens are created for words that occur more than a chosen threshold frequency. String to index (stoi) and Index to string (itos) dictionaries are created to switch from string to index for these tokens. This is needed as the machine inputs numbers and hence we need to convert the words to indices. Pad token, start of sentence, end of sentence and unknown are defined to help the model make decisions about start, end and padding in captions. 
 
@@ -22,7 +24,7 @@ Apart from these we also have a test examplex dataset with 8 images for which ca
 
 - GetLoader Class: This class defines a FlickrDataset class object and uses the inbuilt PyTorch DataLoader to get the data ready for modeling in PyTorch.
 
-#### Modeling:
+### Modeling:
 
 The model will be in the form of an encoder-decoder. 
 - Encoder CNN:  The encoder will be a Convolutional neural network. This part will be used to understand the images and detect the core information in them by encoding them. Pretrained CNN model inception v3 model is used to learn the information from the images. Last Fully Connected (Linear) layer of the pretrained model is modified to return a tensor of the size that goes into the RNN (LSTM).
@@ -33,7 +35,7 @@ The model will be in the form of an encoder-decoder.
 
 We will be training our model using mini-batch gradient descent. We will be training our model in epochs. The optimizer will train the model by reducing the loss function which is calculated using the generated words and the words in the exisitng captions (while training).
 
-#### Results:
+### Results:
 
 We train our model for 1, 10 and 30 epochs. The observations we made based on the captions generated are:
 
@@ -43,10 +45,10 @@ We train our model for 1, 10 and 30 epochs. The observations we made based on th
 4. When the number of epochs are increased from 1 to 10 and 30, we see imrpovement. The model generates unique captions for each of the test images and does a good job of identifying some core elements of the image.  
 
 
-#### Deployment:
+### Deployment:
 A simple web application will be built using streamlit that will ask the user for an image and generate a caption for the given image.
 
-#### References:
+### References:
 
 https://arxiv.org/pdf/1502.03044.pdf
 https://github.com/Siddharth1698/Image-Captioning-with-Inception-LSTM
