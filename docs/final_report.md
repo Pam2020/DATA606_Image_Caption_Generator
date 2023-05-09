@@ -61,7 +61,7 @@ We train our model for 1, 10 and 30 epochs. The observations we made based on th
 ### Deployment:
 A simple web application is built using streamlit that will ask the user for an image and generate a caption for the given image.
 
-<img src="images/streamlitproduct.jpeg" width="270"/>
+<img src="images/StreamlitProduct.jpeg" width="300"/>
 
 ### Future Work:
 
