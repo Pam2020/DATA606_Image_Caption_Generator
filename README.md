@@ -1,2 +1,2 @@
-# Sravya_Data606
+# Image Caption Generator 
 This is the space where I record my capstone data science project.
